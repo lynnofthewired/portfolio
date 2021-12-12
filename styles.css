@@ -1,7 +1,9 @@
+
+
 /* "Blocks" */
 .body {
     width: 100%;
-    background: #390000;
+    background-color: #390000;
 }
 
 .row {
@@ -37,24 +39,24 @@ li {
 	line-height: 1.8em;
 }
 h1 {
-	font-size: 5rem !important;
+	font-size: 5rem;
 	font-family: 'EB Garamond', serif;
 }
 h2 {
-	font-size: 3.2rem !important;
+	font-size: 3.2rem;
 	font-family: 'EB Garamond', serif;
 }
 h3 {
-	font-size: 2.8rem !important;
+	font-size: 2.8rem;
 	font-family: 'EB Garamond', serif;
 }
 h4 {
-	font-size: 1.8rem !important;
+	font-size: 1.8rem;
 }
 h5 {
-	font-size: 1.2rem !important;
+	font-size: 1.2rem;
 }
 h6 {
-	font-size: 1rem !important;
+	font-size: 1rem;
 }
 /* end fonts */
