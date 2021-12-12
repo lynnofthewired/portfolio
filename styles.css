@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c&family=Montserrat&family=Spartan&display=swap');
 
 /* "Blocks" */
 .body {
@@ -25,6 +26,7 @@ html {
 p {
 	font-size: 1.6rem;
 	line-height: 1.8em;
+    font-family: 'Montserrat', sans-serif;
 }
 a {
     font-size: 1.6rem;
@@ -41,23 +43,27 @@ li {
 }
 h1 {
 	font-size: 5rem;
-	font-family: 'EB Garamond', serif;
+	font-family: 'Comfortaa', sans-serif;
 }
 h2 {
 	font-size: 3.2rem;
-	font-family: 'EB Garamond', serif;
+	font-family: 'Spartan', sans-serif;
 }
 h3 {
 	font-size: 2.8rem;
-	font-family: 'EB Garamond', serif;
+	font-family: 'Spartan', sans-serif;
 }
 h4 {
 	font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
 }
 h5 {
 	font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 h6 {
 	font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 /* end fonts */
+
