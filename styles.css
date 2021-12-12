@@ -3,14 +3,12 @@
 /* "Blocks" */
 .body {
     width: 100%;
-    background-color: #393333;
 }
 
 .row {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #393333;
 }
 
 .column {
@@ -21,6 +19,7 @@
 /* Fonts */
 html {
 	font-size: 62.5%;
+    background-color: #393933;
     color: #fff;
 }
 p {
