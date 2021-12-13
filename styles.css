@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c&family=Montserrat&family=Spartan&display=swap');
 
 /* "Blocks" */
+* {
+    box-sizing: border-box;
+}
 .body {
     width: 100%;
 }
@@ -9,18 +12,23 @@
 .row {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .column {
     width: 75%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 /* end blocks */
 
 /* Fonts */
 html {
 	font-size: 62.5%;
-    background-color: #292922;
+    background-color: #1E1629;
     color: #fff;
 }
 p {
@@ -44,6 +52,7 @@ li {
 h1 {
 	font-size: 5rem;
 	font-family: 'Comfortaa', sans-serif;
+    text-align: center;
 }
 h2 {
 	font-size: 3.2rem;
@@ -54,16 +63,50 @@ h3 {
 	font-family: 'Spartan', sans-serif;
 }
 h4 {
-	font-size: 1.8rem;
+	font-size: 2.4rem;
     font-family: 'Montserrat', sans-serif;
 }
 h5 {
-	font-size: 1.2rem;
+	font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 h6 {
-	font-size: 1rem;
+	font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
 }
 /* end fonts */
 
+/* Containers */
+
+.thumbnail {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+ max-width: 90%;
+ max-height: 90%;
+}
+
+/* end containers */
+
+#25202B
+#675D73
+#494053
+#1E1629
+#160D22
