@@ -49,7 +49,7 @@ html {
     transform: translateY(-.5rem) !important;
 }
 .footer {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 
