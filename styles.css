@@ -48,6 +48,10 @@ html {
 .hero span:hover {
     transform: translateY(-.5rem) !important;
 }
+.footer {
+    background-color: #000;
+}
+
 
 /* end blocks */
 
