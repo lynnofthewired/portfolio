@@ -51,6 +51,9 @@ html {
 footer {
     background-color: #000;
 }
+button {
+    width: 20rem;
+}
 
 
 /* end blocks */
