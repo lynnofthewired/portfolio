@@ -35,7 +35,7 @@ html {
     background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
     padding: 4%;
-	font-size: 15rem;
+	font-size: 9vw;
 	font-family: 'Comfortaa', sans-serif;
     text-align: left;
     vertical-align: center;
@@ -83,7 +83,7 @@ li {
 }
 .subtitle {
     float: right;
-    font-size: 3rem;
+    font-size: 3vw;
     right: 10em;
 }
 caption {
@@ -166,6 +166,33 @@ a > img {
  background-color: black;
  border: 5em solid black;
 }
+
+form {
+    max-width: 80vw;
+    margin: auto;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type=submit] {
+    width: 100%;
+    background-color: #675D73;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
 
 /* end containers */
 
