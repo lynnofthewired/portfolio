@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c&family=Montserrat&family=Spartan&display=swap');
 
+@keyframes acid {
+    0%  { color: hsl(0, 100%, 90%) }
+   25%  { color: hsl(90, 100%, 90%) }
+   50%  { color: hsl(180, 100%, 90%) }
+   75%  { color: hsl(270, 100%, 90%) }
+  100%  { color: hsl(360, 100%, 90%) }
+ }
 
 /* "Blocks" */
 
@@ -100,6 +107,14 @@ h1 {
 	font-size: 5rem;
 	font-family: 'Comfortaa', sans-serif;
     text-align: center;
+    animation-duration: 5s;
+    animation-name: acid;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: acid;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 h2 {
 	font-size: 3.2rem;
