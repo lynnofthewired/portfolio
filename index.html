@@ -20,9 +20,22 @@
     <h2>Websites</h2>
     <div class="row">
         <div class="column">
-            <button class="ripple">
-                <a href="#">Button</a>
-            </button>
+            <a class="ripple" href="#">button</a>
+            <script type="text/javascript">
+                const buttons = document.querySelectorAll('a');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        
+                        let x = e.clientX - a.target.offsetLeft;
+                        let y = e.clientY - a.target.offfsetTop;
+
+                        let ripples = document.createElement('span');
+                        ripples.style.left = x + 'px';
+                        ripples.style.top = x + 'px';
+                        this.appendChild(ripples);
+                    })
+                })
+            </script>
         </div>
     </div> 
 

@@ -215,7 +215,7 @@ button[type=submit] {
 
 .ripple {
     width: 15rem;
-    background-image: linear-gradient(to right, #aa6c1b, #572288);
+    background-image: linear-gradient(90deg , #aa6c1b, #572288);
     color: #9f0;
     padding: 1.4rem 2rem;
     border: none;
@@ -230,7 +230,14 @@ button[type=submit] {
     letter-spacing: 0.3rem;
 }
 
-
+span {
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50% -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
 /* end containers */
 
 
