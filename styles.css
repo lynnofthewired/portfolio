@@ -213,7 +213,7 @@ button[type=submit] {
     font-size: 1.6rem;
   }
 
-ripple {
+.ripple {
     width: 15rem;
     background-image: -gradient(to right, #88335b, #572288);
     color: #9f0;
@@ -223,7 +223,7 @@ ripple {
     cursor: pointer;
 }
 
-ripple a {
+.ripple a {
     color: #fff;
 }
 
