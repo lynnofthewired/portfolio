@@ -215,7 +215,7 @@ button[type=submit] {
 
 button {
     width: 15rem;
-    background-color: #70f;
+    background-image: linear-gradient(#ff88ff, #88ff88);
     color: #9f0;
     padding: 1.4rem 2rem;
     border: none;
