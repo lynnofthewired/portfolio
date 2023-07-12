@@ -225,6 +225,7 @@ button[type=submit] {
 
 .ripple a {
     color: #fff;
+    text-decoration: none;
 }
 
 
