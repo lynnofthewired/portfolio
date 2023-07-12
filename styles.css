@@ -213,14 +213,18 @@ button[type=submit] {
     font-size: 1.6rem;
   }
 
-button {
+ripple {
     width: 15rem;
-    background-image: -gradient(to right, #ff88ff, #88ff88);
+    background-image: -gradient(to right, #88335b, #572288);
     color: #9f0;
     padding: 1.4rem 2rem;
     border: none;
-    border-radius: 10%;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+ripple a {
+    color: #fff;
 }
 
 
