@@ -215,7 +215,7 @@ button[type=submit] {
 
 .ripple {
     width: 15rem;
-    background-image: -gradient(to right, #88335b, #572288);
+    background-image: linear-gradient(to right, #88335b, #572288);
     color: #9f0;
     padding: 1.4rem 2rem;
     border: none;
