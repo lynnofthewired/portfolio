@@ -226,6 +226,8 @@ button[type=submit] {
 .ripple a {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 
