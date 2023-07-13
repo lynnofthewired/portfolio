@@ -20,22 +20,31 @@
     <h2>Websites</h2>
     <div class="row">
         <div class="column">
-            <a class="ripple" href="#">button</a>
+            <a class="ripple" href="#">
+                Button
+            </a>
             <script type="text/javascript">
-                const buttons = document.querySelectorAll('a');
+                const buttons = document.querySelectorAll('.ripple');
                 buttons.forEach(btn => {
-                    btn.addEventListener('click', function(e) {
+                    btn.addEventListener('mouseover', function(e) {
                         
-                        let x = e.clientX - a.target.offsetLeft;
-                        let y = e.clientY - a.target.offfsetTop;
-
+                        let rect = e.target.getBoundingClientRect();
+                        let x = e.clientX - rect.left;
+                        let y = e.clientY - rect.top;
+            
                         let ripples = document.createElement('span');
                         ripples.style.left = x + 'px';
-                        ripples.style.top = x + 'px';
+                        ripples.style.top = y + 'px';
+                        ripples.classList.add("ripple-span");
                         this.appendChild(ripples);
+            
+                        setTimeout(() => {
+                            ripples.remove();
+                        }, 1000);
                     })
                 })
             </script>
+            
         </div>
     </div> 
 

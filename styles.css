@@ -36,7 +36,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .hero {
     background-color: rgba(0, 0, 0, 0.75);
@@ -214,9 +214,16 @@ button[type=submit] {
   }
 
 .ripple {
+    position: relative;
     width: 15rem;
-    background-image: linear-gradient(90deg , #aa6c1b, #572288);
-    color: #9f0;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+    overflow: hidden;
     padding: 1.4rem 2rem;
     border: none;
     border-radius: 5rem;
@@ -230,10 +237,10 @@ button[type=submit] {
     letter-spacing: 0.3rem;
 }
 
-span {
+.ripple > span {
     position: absolute;
     background-color: #fff;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
     animation: animate 1s linear infinite;
@@ -242,10 +249,12 @@ span {
     0% {
         width: 0px;
         height: 0px;
+        opacity: 0.8;
     }
     100% {
-        width: 50px;
-        height: 50px;
+        width: 20.0rem;
+        height: 20.0rem;
+        opacity: 0;
     }
 }
 /* end containers */
