@@ -230,6 +230,21 @@ button[type=submit] {
     cursor: pointer;
 }
 
+.photo-link {
+    position: relative;
+
+    cursor: pointer;
+}
+
+.photo-link > span {
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear;
+}
+
 .ripple a {
     color: #fff;
     text-decoration: none;
