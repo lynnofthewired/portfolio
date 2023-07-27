@@ -23,12 +23,29 @@
             <a class="ripple" href="#">
                 Button
             </a>
+            <a class="ripple" href="#" style="background-image:url(home_data_description.png); width:50%; height:50vh;">
+                Button
+            </a>
+            <a href="https://datadescription.com/" target="_blank"><img class="ripple"  src="home_data_description.png"/></a>
+
+            
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="column">
+            <p>Data Description, Inc. (Divi)</p>
+            <a href="https://datadescription.com/" class="ripple" target="_blank"><img src="home_data_description.png"/></a>
             <script type="text/javascript">
-                const buttons = document.querySelectorAll('.ripple');
-                buttons.forEach(btn => {
-                    btn.addEventListener('mouseover', function(e) {
-                        
-                        let rect = e.target.getBoundingClientRect();
+                const links = document.querySelectorAll('.ripple');
+                links.forEach(link => {
+                    link.addEventListener('mouseover', function(e) {
+                        // First we need to find out whether the mouseover event has bubbled up from
+                        // an image. If it did, we want to use the image as the 'target' for the ripple.
+                        // Otherwise, we will use 'this' (the link itself) as the target.
+                        let target = e.target.tagName === 'IMG' ? e.target : this;
+            
+                        let rect = target.getBoundingClientRect();
                         let x = e.clientX - rect.left;
                         let y = e.clientY - rect.top;
             
@@ -36,6 +53,9 @@
                         ripples.style.left = x + 'px';
                         ripples.style.top = y + 'px';
                         ripples.classList.add("ripple-span");
+            
+                        // We always append the ripple to 'this' (the link), not 'target', because
+                        // 'target' could be an image, and images can't have children in HTML.
                         this.appendChild(ripples);
             
                         setTimeout(() => {
@@ -44,18 +64,10 @@
                     })
                 })
             </script>
-            
-        </div>
-    </div> 
-
-    <div class="row">
-        <div class="column">
-            <p>Data Description, Inc. (Divi)</p>
-            <a href="https://datadescription.com/" target="_blank"><img src="home_data_description.png" /></a>
         </div>
         <div class="column">
             <p>ActivStats Tools (Gutenberg, HTML, CSS) </p>
-            <a href="https://astools.datadescription.com/" target="_blank"><img src="home_as_tools.png" /></a>
+            <a class="ripple" href="https://astools.datadescription.com/" target="_blank"><img src="home_as_tools.png" /></a>
         </div>
         <div class="column">
             <p>Northstar Network (Gutenberg, HTML, CSS, Advanced Custom Fields)</p>

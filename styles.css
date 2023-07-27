@@ -215,20 +215,25 @@ button[type=submit] {
 
 .ripple {
     position: relative;
-    width: 15rem;
+    /*width: 15rem;
     background: linear-gradient(90deg, #755bea, #ff72c0);
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    text-align: center;
+    text-align: center;*/
     overflow: hidden;
     padding: 1.4rem 2rem;
     border: none;
     border-radius: 5rem;
     cursor: pointer;
+    z-index: 0;
 }
+
+/* 
+
+*/
 
 .photo-link {
     position: relative;
@@ -251,14 +256,17 @@ button[type=submit] {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
-
-.ripple > span {
+.ripple img {
+    z-index: 0;
+}
+.ripple span {
     position: absolute;
     background-color: #fff;
     transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
     animation: animate 1s linear infinite;
+    z-index: 5;
 }
 @keyframes animate {
     0% {
@@ -267,8 +275,8 @@ button[type=submit] {
         opacity: 0.8;
     }
     100% {
-        width: 20.0rem;
-        height: 20.0rem;
+        width: 100.0rem;
+        height: 100.0rem;
         opacity: 0;
     }
 }
