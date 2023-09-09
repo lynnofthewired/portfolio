@@ -32,8 +32,6 @@ html {
 }
 
 .column {
-    width: 33%;
-    padding: 0 2%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -291,7 +289,7 @@ button[type=submit] {
 
 /* Small */
 @media (min-width: 576px) {
-    
+    column: 100%;
 }
 
 /* Medium */
@@ -301,12 +299,12 @@ button[type=submit] {
 
 /* Large */
 @media (min-width: 992px) {
-    
+    column: 50%;
 }
 
 /* Extra Large */
 @media (min-width: 1200px) {
-    
+    column: 33%;
 }
 
 /* Extra Extra Large */
