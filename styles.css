@@ -28,10 +28,11 @@ html {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .column {
-    width: 75%;
+    width: 100%;
     padding: 0 2%;
     display: flex;
     justify-content: center;
@@ -290,31 +291,27 @@ button[type=submit] {
 
 /* Small */
 @media (min-width: 576px) {
-    /* Your CSS rules here */
+    
 }
 
 /* Medium */
 @media (min-width: 768px) {
-    h2 {
-        font-size: 2rem;
-    }
+    
 }
 
 /* Large */
 @media (min-width: 992px) {
-    h2 {
-        font-size: 4rem;
-    }
+    
 }
 
 /* Extra Large */
 @media (min-width: 1200px) {
-    /* Your CSS rules here */
+    
 }
 
 /* Extra Extra Large */
 @media (min-width: 1400px) {
-    /* Your CSS rules here */
+    
 }
 /* end media queries */
 
