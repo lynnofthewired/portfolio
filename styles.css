@@ -28,7 +28,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .column {
