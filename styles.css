@@ -302,7 +302,9 @@ button[type=submit] {
 
 /* Large */
 @media (min-width: 992px) {
-    /* Your CSS rules here */
+    h2 {
+        font-size: 4rem;
+    }
 }
 
 /* Extra Large */
