@@ -23,7 +23,7 @@ html {
 }
 
 .row {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -32,10 +32,10 @@ html {
 }
 
 .column {
-    width: 100%;
+    width: 33%;
     padding: 0 2%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     flex-direction: column;
 }
