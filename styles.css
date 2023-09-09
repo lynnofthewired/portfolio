@@ -283,6 +283,17 @@ button[type=submit] {
 /* end containers */
 
 
+/* Media Queries */
+
+    /* Large Screen */
+@media (max-width: 992px) { 
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* end media queries */
+
 /*
 #25202B
 #675D73
