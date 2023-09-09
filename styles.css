@@ -290,7 +290,7 @@ button[type=submit] {
 
 /* Small */
 @media (min-width: 576px) {
-    column {
+    .column {
         width: 100%;
     }
 }
@@ -302,14 +302,14 @@ button[type=submit] {
 
 /* Large */
 @media (min-width: 992px) {
-    column {
+    .column {
         width: 50%;
     }
 }
 
 /* Extra Large */
 @media (min-width: 1200px) {
-    column {
+    .column {
         width: 33%;
     }
 }
