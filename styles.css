@@ -84,7 +84,7 @@ p {
     font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	line-height: .8rem;
-    margin: 0 0 .5rem 0;
+    padding: 0 0 .5rem 0;
 }
 a {
     font-size: 1.6rem;
@@ -128,7 +128,7 @@ h2 {
 h3 {
 	font-size: 2.4rem;
 	font-family: 'Spartan', sans-serif;
-    margin: 0 0 .5rem 0;
+    padding: 0 0 .5rem 0;
 }
 h4 {
 	font-size: 2rem;
@@ -154,7 +154,6 @@ a > img {
     background-color: rgba(0, 0, 0, 0.25);*/
     border: 2rem solid;
     border-color: rgba(0, 0, 0, 0.25);
-    border-radius: 0.5rem;
     flex-grow: 1;
 }
 
@@ -231,7 +230,6 @@ button[type=submit] {
     text-align: center;*/
     overflow: hidden;
     border: none;
-    border-radius: 5rem;
     cursor: pointer;
     z-index: 0;
 }
