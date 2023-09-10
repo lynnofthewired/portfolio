@@ -46,7 +46,7 @@ body {
 .column {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 1.4rem 2rem;
