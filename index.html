@@ -23,33 +23,9 @@
             <h3>Data Description, Inc.</h3>
             <p>Divi</p>
             <a href="https://datadescription.com/" class="ripple" target="_blank"><img src="home_data_description.png"/></a>
+            <script type="text/javascript" src="ripple.js"></script>
             <script type="text/javascript">
-                const links = document.querySelectorAll('.ripple');
-                links.forEach(link => {
-                    link.addEventListener('mouseover', function(e) {
-                        // First we need to find out whether the mouseover event has bubbled up from
-                        // an image. If it did, we want to use the image as the 'target' for the ripple.
-                        // Otherwise, we will use 'this' (the link itself) as the target.
-                        let target = e.target.tagName === 'IMG' ? e.target : this;
-            
-                        let rect = target.getBoundingClientRect();
-                        let x = e.clientX - rect.left;
-                        let y = e.clientY - rect.top;
-            
-                        let ripples = document.createElement('span');
-                        ripples.style.left = x + 'px';
-                        ripples.style.top = y + 'px';
-                        ripples.classList.add("ripple-span");
-            
-                        // We always append the ripple to 'this' (the link), not 'target', because
-                        // 'target' could be an image, and images can't have children in HTML.
-                        this.appendChild(ripples);
-            
-                        setTimeout(() => {
-                            ripples.remove();
-                        }, 1000);
-                    })
-                })
+            addRippleEffectToElements('.ripple');
             </script>
         </div>
         <div class="column">
