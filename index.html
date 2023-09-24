@@ -125,10 +125,10 @@
         <h2>Contact</h2>
         <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <p>
-                <label>Name <input type="text" name="name"></label>
+                <label>Name <input type="text" name="name" required></label>
             </p>
             <p>
-                <label>Email <input type="text" name="email"></label>
+                <label>Email <input type="email" name="email" required></label>
             </p>
             <p>
                 <label>Message <textarea name="message" form="contact" rows="5" cols="50"></textarea></label>
