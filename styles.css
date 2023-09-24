@@ -288,7 +288,7 @@ button[type=submit] {
     -webkit-animation-timing-function: linear;
 }
 
-button:hover[type=submit] {
+button[type=submit]:hover {
     color: #000;
     background-color: rgba(0, 0, 0, 0);
     animation-duration: 5s;
@@ -296,7 +296,7 @@ button:hover[type=submit] {
     animation-iteration-count: infinite;
     animation-timing-function: steps(5, end);
     -webkit-animation-duration: 5s;
-    -webkit-animation-name: acid;
+    -webkit-animation-name: acid-background;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
