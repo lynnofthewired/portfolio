@@ -290,6 +290,7 @@ button[type=submit] {
 
 button:hover[type=submit] {
     color: #000;
+    background-color: rgba(0, 0, 0, 0);
     animation-duration: 5s;
     animation-name: acid-background;
     animation-iteration-count: infinite;
