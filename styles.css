@@ -259,7 +259,7 @@ button[type=submit] {
     font-size: 1.6rem;
 }
 
-button[type=submit] :hover {
+button:hover[type=submit] {
     animation: acid 5s infinite;
 }
 
