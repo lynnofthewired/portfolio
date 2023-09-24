@@ -260,7 +260,14 @@ button[type=submit] {
 }
 
 button:hover[type=submit] {
-    animation: acid 5s infinite;
+    animation-duration: 5s;
+    animation-name: acid;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5, end);
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: acid;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
 }
 
 .ripple {
